@@ -1,0 +1,31 @@
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+:root {
+    // Couleur de base
+    --color-beige: #F7F9F7;
+    --color-black: #34322D;
+    --color-white-full:#fff;
+    --color-balck-full:#212121;
+    --color-pink: #EB7573;
+    --color-green: #93B294;
+    --color-dark-green: #364B45;
+
+
+    // Couleurs du projet
+    --color-primary: var(--color-pink);
+    --color-secondary: var(--color-green);
+    --color-tertiary: var(--color-dark-green);
+
+    --color-bg-primary: var(--color-dark-green);
+    --color-bg-secondary: var(--color-beige);
+    --color-bg-footer: var(--color-black);
+
+
+
+    --color-neutral-light: #eeeeee;
+    --color-neutral-dark: #888888;
+    --color-neutral-green: #e1eae2;
+    --color-fail: #e33835;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Info Retro</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_logo">
+                <span><img src="assets/images/Logo.svg" alt="" /></span>
+                <h2>PartyMoney</h2>
+            </div>
+            <div class="header_search">
+                <div>
+                    <span><img src="assets/images/Loop.svg" alt="" /></span>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Rechercher">
+                    </form>
+                </div>
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li>Découvrir des projets</li>
+                    <li>Démarrer un projet</li>
+                    <li>Connection</li>
+                    <li>Inscription</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="content bg-secondary">
+        <div class="wrapper">
+            <div class="content_form">
+                <form action="#" class="form" autocomplete="off" data-component="Form">
+                    <fieldset class="grid">
+                        <h3 class="title">Éditez votre contrepartie</h3>
+                        <div class="input">
+                            <div class="form_label_top">
+                                <label class="input_label" for="fullname">Nom de la contrepartie</label>
+                                <p>Obligatoire</p>
+                            </div>
+                            <input
+                                class="input_element"
+                                type="text"
+                                name="fullname"
+                                id="fullname">
+                        </div>
+                        <div class="input">
+                            <div class="form_title_top">
+                                <label class="input_label" for="image">Image</label>
+                                <p>Recommandé</p>
+                            </div>
+                            <input
+                                class="input_element"
+                                type="file"
+                                name="image"
+                                id="image"
+                                style="width: 40%;">
+                        </div>
+                        <div class="input">
+                            <div class="form_label_top">
+                                <label class="input_label" for="montant">Montant</label>
+                                <p>Obligatoire</p>
+                            </div>
+                            <div class="form_montant_bottom">
+                                <input
+                                class="input_element"
+                                type="number"
+                                name="montant"
+                                id="montant"
+                                style="width: 33%;"
+                                required>
+                            <div class="form_montant_buttons">
+                                <span id="button_montant_1">CAD</span>
+                                <span id="button_montant_2">USD</span>
+                                <span id="button_montant_3">EUR</span>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="input textarea description">
+                            <label class="input_label" for="description">Description</label>
+                            <textarea name="description" id="description" class="input_element"></textarea>
+                        </div>
+                        
+                        <div class="form_groupe_disponibilite">
+                            <label class="input_label" for="disponibilite">Disponibilité</label>
+                            <div class="form_groupe_disponibilite_bottom">
+                                <div class="input">
+                                    <input
+                                        class="input_element"
+                                        type="number"
+                                        name="disponibilite"
+                                        id="disponibilite">
+                                </div>
+                                <div class="input checkbox">
+                                    <input
+                                        class="input_element"
+                                        type="checkbox"
+                                        name="optin[]"
+                                        id="optin"
+                                        value="true">
+                                    <label class="input_label" for="optin">
+                                        Pas de limite</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_group_date">
+                            <div class="form_label_top">
+                                <label class="input_label" for="date">Mois</label>
+                                <p>Obligatoire</p>
+                            </div>
+                            <div class="form_group_date_bottom">
+                                <div>
+                                    <p>Mois</p>
+                                    <div class="input">
+                                        <input
+                                            class="input_element"
+                                            type="text"
+                                            name="date"
+                                            id="mois"
+                                            required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input">
+                                        <p>Année</p>
+                                        <input
+                                            class="input_element"
+                                            type="text"
+                                            name="date"
+                                            id="annee"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input checkbox">
+                            <h5 class="form_subtitle">Livraison</h5>
+                            <div class="form_checkbox_bottom">
+                                <input
+                                class="input_element"
+                                type="checkbox"
+                                name="optin2[]"
+                                id="optin2"
+                                value="true">
+                                <label class="input_label" for="optin2">
+                                    Livraison physique est nécessaire</label>
+                            </div>
+                        </div>
+                        <div class="input select">
+                            <div class="form_label_top">
+                                <label class="input_label" for="visibilite">Visibilité</label>
+                                <p>Obligatoire</p>
+                            </div>
+                            <select 
+                            style="width: 66%;" name="visibilite" id="visibilite" class="input_element" required>
+                                <option value="" hidden></option>
+                                <option value="visibilite">Visible par tous</option>
+                                <option value="visibilite">Visible par seulement amis</option>
+                                <option value="visibilite">Invisible</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label class="input_label" for="variable">Variantes</label>
+                            <div class="form_box_variables">
+                                <div class="form_box_variables_line">
+                                    <img src="assets/images/dot_variable.svg" alt="">
+                                    <input
+                                        class="input_element_variable"
+                                        type="text"
+                                        name="variable"
+                                        id="variable1">
+                                </div>
+                                <div class="form_box_variables_line">
+                                    <img src="assets/images/dot_variable.svg" alt="">
+                                    <input
+                                        class="input_element_variable"
+                                        type="text"
+                                        name="variable"
+                                        id="variable2">
+                                    </div>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <div class="form_button">
+                        <button class="button_secondary">Retour</button>
+                        <button class="button button_primary">Enregister</button>
+                    </div>
+                </form>
+            </div>
+            <div class="test">
+            <aside class="content_perks" id="content_perks_preview">
+                <div class="bg_preview"></div>
+                <div class="content_perk js-preview">
+                    <img src="assets/images/image_3.png" alt="">
+                    <div class="content_perk_content">
+                        <div class="content_titre">
+                            <h3 data-follow="fullname"></h3>
+                        </div>
+                        <div class="content_prix">
+                            <div class="form_preview_montant_line">
+                                <h4>$</h4>
+                                <h4 data-follow="montant">...</h4>
+                                <h4> CAD</h4>
+                            </div>
+                            <div class="form_preview_montant_line">
+                                <p>$ </p>
+                                <p data-follow="montant">...</p>
+                                <p> USD</p>
+                            </div>
+                        </div>
+                        <div class="content_perk_description">
+                            <p data-follow="description"></p>
+                        </div>
+                        <div class="content_perk_included">
+                            <h5>Éléments <br>Inclues</h5>
+                            <ul>
+                                <li>Élément</li>
+                                <li>Élément</li>
+                                <li>Élément</li>
+                            </ul>
+                        </div>
+                        <div class="content_perk_footer">
+                            <div class="content_date">
+                                <h5>Livraison Prévue</h5>
+                                <div class="form_preview_montant_line">
+                                    <p data-follow="mois"></p>
+                                    <p data-follow="annee"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_top">
+                <div class="footer_nav">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">À propos de PartyMoney</a></li>
+                        <li><a href="#">Notre charte</a></li>
+                        <li><a href="#">Statistiques</a></li>
+                        <li><a href="#">Presses</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Politique relative aux cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Créer un compte</a></li>
+                        <li><a href="#">Vérification de l'identité</a></li>
+                        <li><a href="#">Informations sur le compte</a></li>
+                        <li><a href="#">Méthodes de paiement</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav">
+                    <h4>Politique</h4>
+                    <ul>
+                        <li><a href="#">Confiance et sécurité</a></li>
+                        <li><a href="#">Conditions d'utilisations</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Politique en matière de cookies</a></li>
+                        <li><a href="#">Déclaration d'accessibilité</a></li>
+                        <li><a href="#">Avis de consentement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer_bottom">
+                <img src="assets/images/Logo.svg" alt="Logo" height="100px"/>
+                <div class="footer_plus">
+                    <nav class="footer_nav-socials">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="assets/images/icon-facebook.svg" alt="Facebook" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/images/icon-linkedin.svg" alt="Linked in" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/images/icon-twitter.svg" alt="Twitter" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/images/icon-instagram.svg" alt="Instagram" /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright">PartyMoney, PBC © 2021</p>
+                    <p class="copyright">Illustration créée par upklyak - fr.freepik.com</p>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    </body>
+</html>
