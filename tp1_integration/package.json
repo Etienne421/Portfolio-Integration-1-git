@@ -4,7 +4,7 @@
   "private": true,
   "description": "Stack de développement frontend",
   "author": {
-    "name": "Matt et JF"
+    "name": "Etienne"
   },
   "scripts": {
     "start": "gulp",
